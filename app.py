@@ -1,0 +1,18 @@
+# Create a New Python File and Import the Flask Dependency
+
+from flask import Flask
+
+# Create a New Flask App Instance
+app = Flask(__name__)
+
+# Create Flask Routes
+@app.route('/')
+def hello_world():
+    return 'Hello World'
+
+# Run a Flask App
+set FLASK_APP=app.py
+flask run
+
+# Copy and paste your localhost address into your web browser. Generally, a localhost will look something like this, for context.
+# http://127.0.0.1:5000/

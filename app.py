@@ -51,6 +51,7 @@ def precipitation():
     precipitation = session.query(Measurement.date, Measurement.prcp).\
       filter(Measurement.date >= prev_year).all()
     precip = {date: prcp for date, prcp in precipitation}
+    session.close()
     return jsonify(precip)
 
 # Routes 9.5.4 stations page
@@ -60,6 +61,7 @@ def precipitation():
 def stations():
     results = session.query(Station.station).all()
     stations = list(np.ravel(results))
+    session.close()
     return jsonify(stations=stations)
 
 # Routes 9.5.5 tobs page
@@ -72,6 +74,7 @@ def temp_monthly():
         filter(Measurement.station == 'USC00519281').\
         filter(Measurement.date >= prev_year).all()
     temps = list(np.ravel(results))
+    session.close()
     return jsonify(temps=temps)
 
 # Routes 9.5.6 stats pages
@@ -86,10 +89,12 @@ def stats(start=None, end=None):
         results = session.query(*sel).\
             filter(Measurement.date >= start).all()
         temps = list(np.ravel(results))
+        session.close()
         return jsonify(temps)
 
     results = session.query(*sel).\
         filter(Measurement.date >= start).\
         filter(Measurement.date <= end).all()
     temps = list(np.ravel(results))
+    session.close()
     return jsonify(temps)

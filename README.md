@@ -16,7 +16,7 @@ Code: [SurfsUp_Challenge.ipynb](SurfsUp_Challenge.ipynb)
 
 ## Results: Temperature June vs December
 
-![jun_temp.png](Images/jun_temp.png)
+![jun_temp.png](Images/jun_temp.png)<br/>
 ![dec_temp.png](Images/dec_temp.png)
 
 - The difference between the minimum temperatures of June (64°F) and December (56°F) is a total of 8°F.
@@ -27,7 +27,7 @@ Code: [SurfsUp_Challenge.ipynb](SurfsUp_Challenge.ipynb)
 
 ## Results: Percipitation June vs December
 
-![jun_prec.png](Images/jun_prec.png)
+![jun_prec.png](Images/jun_prec.png)<br/>
 ![dec_prec.png](Images/dec_prec.png)
 
 - The difference between the maximum amount of precipitation between June (4.43 inches) and December (6.42 inches) is a total of 1.99 inches.
@@ -37,8 +37,8 @@ Code: [SurfsUp_Challenge.ipynb](SurfsUp_Challenge.ipynb)
 
 ## Results: Station Temperature and Precipitation
 
-![station_temp.png](Images/station_temp.png)
-![station_prec.png](Images/station_prec.png)
+![station_temp.png](Images/station_temp.png)<br/>
+![station_prec.png](Images/station_prec.png)<br/>
 ![station_chart.png](Images/station_chart.png)
 
 
